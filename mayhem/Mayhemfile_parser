@@ -1,0 +1,9 @@
+project: tomlkit
+target: fuzz-parser
+testsuite:
+    - file:///mayhem/mayhem/corpus
+
+cmds:
+  - cmd: /mayhem/fuzz_parser
+    libfuzzer: true
+    timeout: 12

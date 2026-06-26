@@ -1,0 +1,9 @@
+project: tomlkit
+target: fuzz-dumps
+testsuite:
+    - file:///mayhem/mayhem/corpus
+
+cmds:
+  - cmd: /mayhem/fuzz_dumps
+    libfuzzer: true
+    timeout: 12
