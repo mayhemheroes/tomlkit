@@ -1,0 +1,9 @@
+project: tomlkit
+target: fuzz-toml
+
+cmds:
+  - cmd: /mayhem/fuzz_toml
+    libfuzzer: true
+    timeout: 12
+    env:
+      TMPDIR: /dev/shm

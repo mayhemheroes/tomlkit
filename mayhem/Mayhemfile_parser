@@ -1,0 +1,9 @@
+project: tomlkit
+target: fuzz-parser
+
+cmds:
+  - cmd: /mayhem/fuzz_parser
+    libfuzzer: true
+    timeout: 12
+    env:
+      TMPDIR: /dev/shm
